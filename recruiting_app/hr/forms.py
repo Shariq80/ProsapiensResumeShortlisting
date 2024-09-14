@@ -4,4 +4,4 @@ from .models import JobPosting
 class JobPostingForm(forms.ModelForm):
     class Meta:
         model = JobPosting
-        fields = ['title', 'description']
+        fields = ['title', 'description', 'location']

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR Dashboard</title>
+</head>
+<body>
+    <h1>HR Dashboard</h1>
+    <a href="{% url 'add_job_posting' %}">Add New Job Posting</a>
+    <h2>Job Listings</h2>
+    <ul>
+        {% for job in jobs %}
+            <li>
+                <a href="{% url 'view_job_posting' job.id %}">{{ job.title }}</a>
+                - {{ job.location }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "model": "candidates.application",
+        "pk": 1,
+        "fields": {
+            "job_posting": 1,
+            "candidate": 1,
+            "resume": "resumes/sample_resume_1.pdf",
+            "cover_letter": "I am excited to apply for the Software Engineer position.",
+            "match_score": 85.5,
+            "applied_at": "2024-09-02T15:30:00Z"
+        }
+    },
+    {
+        "model": "candidates.application",
+        "pk": 2,
+        "fields": {
+            "job_posting": 2,
+            "candidate": 2,
+            "resume": "resumes/sample_resume_2.pdf",
+            "cover_letter": "I am very interested in the Data Scientist role.",
+            "match_score": 90.0,
+            "applied_at": "2024-09-06T16:45:00Z"
+        }
+    }
+]

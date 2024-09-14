@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ job.title }}</title>
+</head>
+<body>
+    <h1>{{ job.title }}</h1>
+    <p>{{ job.description }}</p>
+    <h2>Shortlisted Candidates</h2>
+    <ul>
+        {% for candidate in candidates %}
+            <li>{{ candidate.candidate.username }} - Match Score: {{ candidate.match_score }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
