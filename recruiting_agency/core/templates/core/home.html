@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Seekers - Home</title>
+</head>
+<body>
+    <h1>Open Job Postings</h1>
+    <ul>
+        {% for job in job_postings %}
+            <li>
+                <a href="{% url 'job_detail' job.pk %}">{{ job.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

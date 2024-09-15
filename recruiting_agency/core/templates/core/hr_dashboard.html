@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR Dashboard</title>
+</head>
+<body>
+    <h1>HR Dashboard</h1>
+    <h2>Job Postings</h2>
+    <ul>
+        {% for job in job_postings %}
+            <li>
+                <a href="{% url 'applicant_list' job.pk %}">{{ job.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ job_posting.title }}</title>
+</head>
+<body>
+    <h1>{{ job_posting.title }}</h1>
+    <p>{{ job_posting.description }}</p>
+    <a href="{% url 'application_form' job_posting.pk %}">Apply</a>
+</body>
+</html>

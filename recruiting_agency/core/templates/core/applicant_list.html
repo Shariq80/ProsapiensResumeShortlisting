@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Applicants for {{ job_posting.title }}</title>
+</head>
+<body>
+    <h1>Applicants for {{ job_posting.title }}</h1>
+    <ul>
+        {% for application in applications %}
+            <li>
+                {{ application.name }} - {{ application.email }} - {{ application.years_of_experience }} years - 
+                Match Score: {{ application.match_score|default:"N/A" }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
